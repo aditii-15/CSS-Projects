@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carausal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #e1f9e3; /* very light green*/
+            }
+
+
+
+        .container-img {
+            width: 60vw;
+            height: 50rem;
+            border-radius: 1rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-image: url("https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg");
+            background-size: cover;
+            animation: gallery 20s linear infinite;
+        }
+        
+
+        @keyframes gallery {
+            0% {
+                background-image: url("https://images.pexels.com/photos/1420440/pexels-photo-1420440.jpeg");
+            }
+
+            20% {
+                background-image: url("https://images.pexels.com/photos/69776/tulips-bed-colorful-color-69776.jpeg");
+            }
+
+            40% {
+                background-image: url("https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg");
+            }
+
+            60% {
+                background-image: url("https://images.pexels.com/photos/1612351/pexels-photo-1612351.jpeg");
+            }
+
+            80% {
+                background-image: url("https://images.pexels.com/photos/3739624/pexels-photo-3739624.jpeg");
+            }
+
+            100% {
+                background-image: url("https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg");
+            }
+        }
+    </style>
+</head> 
+<body>
+    <div class="container-img"></div>
+</body>
+</html>
