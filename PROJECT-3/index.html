@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon-Loader</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #191825;
+        }
+
+        .loader { /* Circle 1*/
+            width: 200px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: #da7ff6;
+            position: relative;
+            animation: circleloader 3s linear infinite reverse;
+        }
+
+        @keyframes circleloader {
+            100% {
+                rotate: 360deg;
+            }
+        }
+
+        .loader::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 170px;
+            border-radius: 50%;
+            background-color: #191825;
+            aspect-ratio: 1;
+        }
+
+        .loader::after {
+            content: "";
+            position: absolute;
+            top: -24px;
+            left: 65px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #da7ff6;
+            aspect-ratio: 1;
+            box-shadow: 0 0 10px #da7ff6, 0 0 15px #da7ff6, 0 0 20px #da7ff6, 0 0 35px #da7ff6;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>
