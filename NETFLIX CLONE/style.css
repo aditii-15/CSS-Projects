@@ -7,19 +7,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: black;
+}
+
 .main {
     background-image: url("images/bg.jpg");
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 70vh;
     position: relative;
 }
 
 .main .box {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
-    opacity: 0.44;
+    opacity: 0.70;
     position: absolute;
     top: 0;
     background-color: black;
@@ -41,21 +45,21 @@ nav img{
     z-index: 10;
 }
 
-nav .button {
+nav button {
     position: relative;
     z-index: 10;
 }
 
 .hero {
     display: flex;
-    height: 100%;
+    height: calc(100% - 60px);
     align-items: center;
     color: white;
     justify-content: center;
     gap: 24px;
     flex-direction: column; /* it will make the text downwards*/
     position: relative; /*pop out from the background and look better*/
-    
+    padding: 0 30px;
 }
 
 .martel-sans-semibold {
@@ -64,17 +68,95 @@ nav .button {
   font-style: normal;
 }
 
-.hero :first-child{
+.hero> :nth-child(1){
     font-weight: 900;
     font-size: 48px;
 }
 
-.hero :nth-child(2){
+.hero> :nth-child(2){
     font-weight: 600;
     font-size: 24px;
 }
 
-.hero :nth-child(3){
+.hero> :nth-child(3){
     font-weight: 300px;
+    font-size: 17px;
+}
+
+/* We put the > symbol so that it'll only apply to that part only */
+
+.separation {
+    height: 6px;
+    background-color: rgb(67, 67, 67);
+}
+
+.btn {
+    padding: 5px 10px;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 13.5px 24px;
     font-size: 20px;
+    border-radius: 5px;
+    width: 13vw;
+    font-weight: bold;
+}
+
+.hero-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main input {
+    padding: 17px 24px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(200, 192, 192, 0.5);
+    width: 24vw;
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img{
+    width: 36vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
 }
