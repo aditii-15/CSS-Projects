@@ -161,7 +161,11 @@ nav button {
     right: 0;
 }
 
-.first > div:first-child{
+section.first > div :first-child{
     font-size: 48px;
     font-weight: bolder;
+}
+
+section.first > div :nth-child(2){
+    font-size: 24px;
 }
