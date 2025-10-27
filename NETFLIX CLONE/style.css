@@ -163,4 +163,5 @@ nav button {
 
 .first > div:first-child{
     font-size: 48px;
+    font-weight: bolder;
 }
