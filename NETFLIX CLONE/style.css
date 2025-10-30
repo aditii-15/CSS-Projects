@@ -147,6 +147,12 @@ nav button {
     align-items: center;
 }
 
+@media screen and (max-width:1300px){
+    .first{
+        flex-wrap: wrap;
+    }
+}
+
 .secImg {
     position: relative;
 }
