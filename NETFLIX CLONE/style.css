@@ -88,6 +88,8 @@ nav button {
 .separation {
     height: 5px;
     background-color: rgb(45, 45, 45);;
+    position: relative;
+    z-index: 20;
 }
 
 .btn {
@@ -150,7 +152,7 @@ nav button {
 }
 
 .secImg img{
-    width: 44vw;
+    width: 555px;
     position: relative;
     z-index: 10;
     padding-top: 10px;
@@ -159,13 +161,14 @@ nav button {
 
 .secImg video {
     position: absolute;
-    top: 109px;
-    left: 100px;
+    top: 96px;
+    left: 74px;
 }
 
 section.first > div {
     display: flex;
     flex-direction: column;
+    padding: 34px 0;
 }
 
 section.first > div :first-child{
@@ -217,7 +220,32 @@ section.first > div :nth-child(2){
     background-color: rgb(67, 67, 67);
 }
 
-footer {
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .questions{
+    padding-bottom: 24px;
+    padding-right: 34px;
+}
+
+.footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding-right: 34px;
+}
+
+.footer a {
+    color: white;
+    font-size: 14px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
