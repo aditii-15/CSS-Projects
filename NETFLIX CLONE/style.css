@@ -372,34 +372,48 @@ footer .questions{
     width: auto;
 }
 
-    nav img{
+nav img{
     color: red;
     width: 100px;
     position: relative;
     z-index: 10;
 }
 
-    nav button {
+nav button {
     position: relative;
     z-index: 10;
     }
 
-    section.first > div {
+section.first > div {
     display: flex;
     flex-direction: column;
     padding: 34px 0;
 }
 
-    section.first > div :first-child{
+section.first > div :first-child{
     font-size: 39px;
     font-weight: bolder;
     text-align: center;
 }
 
-    section.first > div :nth-child(2){
+section.first > div :nth-child(2){
     font-size: 18px;
     letter-spacing: 1px;
     text-align: center;
+}
+
+.secimg img{
+    width: 261px;
+}
+
+.Secimg img {
+        width: 236px;
+        padding: 7px 13px;
+}
+
+.footer-item {
+    align-items: center;
+}
 }
 
 @media screen and (max-width: 500px){
@@ -410,7 +424,7 @@ footer .questions{
     }
 }
 
-}
+
 .footer a {
     color: white;
     font-size: 14px;
@@ -420,4 +434,5 @@ footer .questions{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
 }
